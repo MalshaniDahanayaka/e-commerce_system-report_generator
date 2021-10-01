@@ -1,5 +1,7 @@
 package com.uok;
 
+import com.uok.v1.DatabaseConnector;
+
 import java.io.File;
 import java.io.PrintWriter;
 import java.sql.Connection;
