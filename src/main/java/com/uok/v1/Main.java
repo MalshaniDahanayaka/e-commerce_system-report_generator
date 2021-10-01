@@ -1,5 +1,7 @@
 package com.uok;
 
+import com.uok.v1.sendingMail.SendingMail;
+
 import java.io.File;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -34,6 +36,8 @@ public class Main {
             pw.write(sb.toString());
             pw.close();
             System.out.println("finished");
+
+
 
         } catch (Exception e) {
             // TODO: handle exception
