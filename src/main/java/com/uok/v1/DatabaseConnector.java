@@ -1,4 +1,4 @@
-package com.uok;
+package com.uok.v1;
 
 
 import java.sql.Connection;
@@ -11,7 +11,7 @@ public class DatabaseConnector {
         Connection connection=null;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = (java.sql.Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc-connector","root", "");
+            connection = (java.sql.Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/e-commerce-system_database","root", "");
 
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

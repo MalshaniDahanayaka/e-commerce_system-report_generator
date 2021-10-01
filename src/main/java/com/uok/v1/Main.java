@@ -1,4 +1,4 @@
-package com.uok;
+package com.uok.v1;
 
 import java.io.File;
 import java.io.PrintWriter;
@@ -19,14 +19,16 @@ public class Main {
             connection=obj_DB_Connection.getConnection();
             ResultSet rs=null;
 
-            String query="select * from users";
+            String query="select * from user_signup";
             PreparedStatement ps= connection.prepareStatement(query);
             rs=ps.executeQuery();
 
             while(rs.next()){
-                sb.append(rs.getString("userid"));
+                sb.append(rs.getString("UserID"));
                 sb.append(",");
-                sb.append(rs.getString("username"));
+                sb.append(rs.getString("Username"));
+                sb.append(",");
+                sb.append(rs.getString("User-Email"));
                 sb.append(",");
                 sb.append("\r\n");
             }
