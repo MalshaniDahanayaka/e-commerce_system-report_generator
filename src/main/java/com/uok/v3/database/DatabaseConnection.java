@@ -1,4 +1,4 @@
-package readData.database;
+package com.uok.v3.database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
