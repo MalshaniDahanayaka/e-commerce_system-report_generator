@@ -1,9 +1,8 @@
 package com.uok.v3.operations;
 
 
-import readData.email.SentEmail;
-import readData.repository.DataRepositoryException;
-import readData.repository.SqlDataRepository;
+import com.uok.v3.email.SentEmail;
+import com.uok.v3.repository.SqlDataRepository;
 
 import java.io.FileNotFoundException;
 import java.sql.ResultSet;
@@ -21,17 +20,12 @@ public class OperationFactory{
 
     }
 
-
-    public void getInstance() throws SQLException, DataRepositoryException, FileNotFoundException {
-
+    public void getInstance() throws SQLException , FileNotFoundException {
 
 
 
         if (arguments[0].equals("user_signup") || arguments[0].equals("monthly_sales")) {
                SqlResultReport =  new SqlDataRepository(arguments[0],arguments[1],arguments[2]).GetSqlDataForReport();
-
-
-
 
 
 

@@ -1,6 +1,7 @@
 package com.uok.v3.repository;
 
-import readData.database.ConnectionDatabase;
+
+import com.uok.v3.database.ConnectionDatabase;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
