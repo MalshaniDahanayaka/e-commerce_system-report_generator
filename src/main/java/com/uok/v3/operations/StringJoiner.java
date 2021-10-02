@@ -11,7 +11,7 @@ public class StringJoiner {
 
     }
 
-    public StringBuilder getInformationArray(ResultSet rs) throws SQLException {
+    public StringBuilder getUserInformationArray(ResultSet rs) throws SQLException {
 
         this.rs = rs;
         StringBuilder sb = new StringBuilder();
@@ -29,6 +29,25 @@ public class StringJoiner {
         return sb;
     }
 
+
+    public StringBuilder getSalesInformationArray(ResultSet rs) throws SQLException {
+
+        this.rs = rs;
+        StringBuilder sb = new StringBuilder();
+
+        while(rs.next()){
+            sb.append(rs.getString("Product_ID"));
+            sb.append(",");
+            sb.append(rs.getString("Product_Name"));
+            sb.append(",");
+            sb.append(rs.getString("Product_Price"));
+            sb.append(",");
+            sb.append(rs.getString("Number_of_purchases"));
+            sb.append(",");
+            sb.append("\r\n");
+        }
+
+        return sb;
+    }
+
 }
-
-
