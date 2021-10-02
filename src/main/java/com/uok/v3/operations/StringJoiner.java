@@ -1,4 +1,4 @@
-package readData.operations;
+package com.uok.v3.operations;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -12,8 +12,8 @@ public class StringJoiner {
     }
 
     public StringBuilder getUserInformationArray(ResultSet rs) throws SQLException {
-
         this.rs = rs;
+
         StringBuilder sb = new StringBuilder();
 
         while(rs.next()){
@@ -51,3 +51,5 @@ public class StringJoiner {
     }
 
 }
+
+

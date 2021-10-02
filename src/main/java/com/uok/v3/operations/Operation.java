@@ -1,5 +1,5 @@
-package readData.operations;
+package com.uok.v3.operations;
 
 public interface Operation {
-    String execute(Double[] numbers) throws  InvalidReportSenderAppOperationException;
+        String execute(String[] argumentDetails) throws  InvalidReportSenderAppOperationException;
 }

@@ -1,4 +1,4 @@
-package readData.repository;
+package com.uok.v3.repository;
 
 import readData.database.ConnectionDatabase;
 
@@ -10,12 +10,20 @@ import java.sql.SQLException;
 public class SqlDataRepository implements DataRepository{
 
         String filetype ;
-        public SqlDataRepository(String filetype){
+        String startDate;
+        String endDate;
+        public SqlDataRepository(String filetype,String startDate,String endDate){
             this.filetype = filetype;
+
+            this.startDate = startDate;
+
+            this.endDate = endDate;
+
+
 
         }
 
-        public ResultSet GetSqlDataForReport() throws DataRepositoryException, SQLException {
+        public ResultSet GetSqlDataForReport() throws  SQLException {
 
             ConnectionDatabase objDBConnection = new  ConnectionDatabase();
             Connection connection = objDBConnection.getConnection();

@@ -1,4 +1,4 @@
-package readData.repository;
+package com.uok.v3.repository;
 
 public class DataRepositoryException extends Exception {
 
