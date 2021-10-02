@@ -1,8 +1,7 @@
 package com.uok.v3.repository;
 
 
-import readData.operations.OperationFactory;
-import readData.repository.DataRepositoryException;
+import com.uok.v3.operations.OperationFactory;
 
 import java.io.FileNotFoundException;
 import java.sql.SQLException;

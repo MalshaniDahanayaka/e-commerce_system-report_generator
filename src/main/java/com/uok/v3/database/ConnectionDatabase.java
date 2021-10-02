@@ -5,11 +5,11 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConnectionDatabase{
-    public Connection getConnection(){
+    public static Connection getConnection(){
 
         try {
 
-            String url="jdbc:mysql://localhost:3306/ecommerce_system_database";
+            String url="jdbc:mysql://localhost:3308/e-commerce_system";
             String username="root";
             String password="";
 
