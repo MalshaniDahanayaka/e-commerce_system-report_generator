@@ -2,8 +2,6 @@ package com.uok.v1;
 
 import com.uok.v1.DatabaseConnector;
 
-import com.uok.v1.sendingMail.SendingMail;
-
 import java.io.File;
 import java.io.PrintWriter;
 import java.sql.Connection;

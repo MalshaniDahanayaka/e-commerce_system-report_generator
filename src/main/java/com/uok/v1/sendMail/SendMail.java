@@ -1,4 +1,4 @@
-package com.uok.v1;
+package com.uok.v1.sendMail;
 
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
@@ -21,6 +21,7 @@ public class SendMail {
         prop.put("mail.smtp.auth", "true");
         prop.put("mail.smtp.starttls.enable", "true");
         prop.put("mail.smtp.ssl.trust","*");
+
         Session session = Session.getInstance(prop,
                 new Authenticator() {
                     protected PasswordAuthentication getPasswordAuthentication() {

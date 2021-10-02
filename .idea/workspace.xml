@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f2113e2-3042-4889-981b-84f69d5c14be" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v1/SendMail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v1/sendMail/SendMail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v2/sendMail/emailSender/gmail/GmailSMTP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v2/sendMail/emailSender/gmail/GmailSMTP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/uok/DatabaseConnector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/uok/Main.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -42,6 +46,28 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Log-Analyser-master/Log-Analyser-master" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="15" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.uok.v1.sendMail.Main" />
+      <module name="e-commerce_system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.uok.v1.sendMail.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

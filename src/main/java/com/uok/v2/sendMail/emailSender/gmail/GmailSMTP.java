@@ -2,6 +2,7 @@ package com.uok.v2.sendMail.emailSender.gmail;
 
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 import java.util.Properties;
@@ -38,7 +39,9 @@ public class GmailSMTP() {
                     new InternetAddress(toEmail)
             );
             message.setSubject("E-commerce shop report");
-            Multipart multipart = new MimeMultipart()
+            Multipart multipart = new MimeMultipart();
+            MimeBodyPart textPart = new MimeBodyPart();
+
 
 
         } catch (MessagingException e) {
