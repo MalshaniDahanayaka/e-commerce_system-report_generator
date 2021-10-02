@@ -1,16 +1,19 @@
 package com.uok.v2.sendMail.emailSender.gmail;
 
+import com.uok.v2.sendMail.emailSender.EmailFormatter;
+
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
+import java.io.IOException;
 import java.util.Properties;
 
-public class GmailSMTP() {
+public class GmailSMTP {
     public void sendEmail(String Email, String filePath){
-        final String username = "yourUsername@email.com";
-        final String password = "password";
+        final String username = "thusharadasun204@gmail.com";
+        final String password = "q9P$`f^t-.R;5p];";
         String fromEmail = username;
         String toEmail = Email;
 
@@ -39,12 +42,32 @@ public class GmailSMTP() {
                     new InternetAddress(toEmail)
             );
             message.setSubject("E-commerce shop report");
-            Multipart multipart = new MimeMultipart();
+            message.setText("short body");
+
+            Multipart emailContent = new MimeMultipart();
+
             MimeBodyPart textPart = new MimeBodyPart();
+            final EmailFormatter emailFormatter = new EmailFormatter();
+            String body = emailFormatter.getEmailBody();
+            textPart.setText(body);
+
+            MimeBodyPart excelAttachment = new MimeBodyPart();
+            excelAttachment.attachFile(filePath);
+
+            emailContent.addBodyPart(textPart);
+            emailContent.addBodyPart(excelAttachment);
+
+            message.setContent(emailContent);
+            Transport.send(message);
+
+            System.out.println("Sending...");
 
 
 
-        } catch (MessagingException e) {
+
+
+
+        } catch (MessagingException | IOException e) {
             e.printStackTrace();
         }
 
