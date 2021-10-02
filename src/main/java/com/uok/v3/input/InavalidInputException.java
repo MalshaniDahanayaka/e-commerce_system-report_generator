@@ -1,7 +1,7 @@
 package com.uok.v3.input;
 
-class InvalidInputException extends Throwable {
-    public InvalidInputException(String message) {
+public class InavalidInputException extends Throwable {
+    public InavalidInputException(String message) {
         super(message);
     }
 }

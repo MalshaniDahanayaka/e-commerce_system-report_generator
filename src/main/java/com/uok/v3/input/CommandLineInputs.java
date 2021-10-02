@@ -1,5 +1,6 @@
 package com.uok.v3.input;
 
+
 import java.util.Arrays;
 
 public class CommandLineInputs implements Inputs {
@@ -28,10 +29,10 @@ public class CommandLineInputs implements Inputs {
     }
 
 
-    public String getArguments() throws InvalidInputException{
+    public String[] getArguments() throws InavalidInputException{
 
-        if (args.length != 4) {
-            throw new InvalidInputException("Please provide the Report type, Start date of the report, End date of the report, output method (file/email), your email address ass  arguments. ");
+        if (args.length != 5) {
+            throw new InavalidInputException("Please provide the Report type, Start date of the report, End date of the report, output method (file/email), your email address ass  arguments. ");
         }
 
         String report_type = args[0];
@@ -43,8 +44,8 @@ public class CommandLineInputs implements Inputs {
         String[] validated_input = new String[5];
 
         //validate the type of report
-        if (!(report_type.equals("monthly_sales") || report_type.equals("user_signups"))){
-            throw new InvalidInputException("Please provide the type of report as monthly_sales or user_signups");
+        if (!(report_type.equals("monthly_sales") || report_type.equals("user_signup"))){
+            throw new InavalidInputException("Please provide the type of report as monthly_sales or user_signups");
         }
         else{
             validated_input [0] = report_type;
@@ -53,7 +54,7 @@ public class CommandLineInputs implements Inputs {
 
         //validate start date
         if(!isDateValid(start_date)){
-            throw new InvalidInputException("Please enter start date of the report in yyyy-mm-dd format");
+            throw new InavalidInputException("Please enter start date of the report in yyyy-mm-dd format");
         }
 
         else{
@@ -62,7 +63,7 @@ public class CommandLineInputs implements Inputs {
 
         //validate start date
         if(!isDateValid(end_date)){
-            throw new InvalidInputException("Please enter end date of the report in yyyy-mm-dd format");
+            throw new InavalidInputException("Please enter end date of the report in yyyy-mm-dd format");
         }
 
         else{
@@ -71,7 +72,7 @@ public class CommandLineInputs implements Inputs {
 
         // validate the output method
         if (!(output_method.equals("email") || output_method.equals("file"))){
-            throw new InvalidInputException("Please provide out put method of the report as email or file");
+            throw new InavalidInputException("Please provide out put method of the report as email or file");
         }
         else {
             validated_input [3] = output_method;
@@ -79,12 +80,15 @@ public class CommandLineInputs implements Inputs {
 
         //validate email
         if(!isEmailValid(email_address)){
-            throw new InvalidInputException("Please enter email address in ####@####.### format");
+            throw new InavalidInputException("Please enter email address in ####@####.### format");
         }
 
         else{
             validated_input [4] = email_address;
         }
-        return Arrays.toString(validated_input);
+
+        return validated_input;
     }
+
+
 }

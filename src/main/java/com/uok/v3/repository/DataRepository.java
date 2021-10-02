@@ -1,4 +1,4 @@
-package readData.repository;
+package com.uok.v3.repository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
