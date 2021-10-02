@@ -12,8 +12,8 @@ public class SendMail {
     public void sendMail(String email, String filePath){
 
         // authentication info
-        final String username = "thusharadasun204@gmail.com";   // account user name
-        final String password = "thu$hara16";                   // account password
+        final String username = "";   // account user name
+        final String password = "";                   // account password
 
         Properties prop = new Properties();
         prop.put("mail.smtp.host", "smtp.gmail.com");
