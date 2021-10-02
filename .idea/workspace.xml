@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f2113e2-3042-4889-981b-84f69d5c14be" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/e-commerce_system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/e-commerce_system.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_21.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java__0_21.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v2/sendMail/emailSender/EmailSender.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v2/sendMail/emailSender/gmail/GmailSMTP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v2/sendMail/emailSender/gmail/GmailSMTP.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
