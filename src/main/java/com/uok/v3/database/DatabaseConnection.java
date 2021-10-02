@@ -4,9 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class ConnectionDatabase{
-    public Connection getConnection(){
-
+public class DatabaseConnection {
+    public static Connection getConnection(){
         try {
 
             String url="jdbc:mysql://localhost:3306/ecommerce_system_database";
