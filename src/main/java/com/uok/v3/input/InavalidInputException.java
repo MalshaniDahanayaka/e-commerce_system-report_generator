@@ -1,7 +1,7 @@
-package readData.input;
+package com.uok.v3.input;
 
-public class InavalidInputException extends Throwable {
-    public InavalidInputException(String message) {
+class InvalidInputException extends Throwable {
+    public InvalidInputException(String message) {
         super(message);
     }
 }
