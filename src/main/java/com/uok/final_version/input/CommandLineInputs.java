@@ -15,7 +15,7 @@ public class CommandLineInputs implements Inputs {
     public String[] getArguments() throws InvalidInputException {
 
         if (args.length != 5) {
-            throw new InvalidInputException("Please provide the Report type, Start date of the report, End date of the report, output method (file/email), your email address ass  arguments. ");
+            throw new InvalidInputException("Please provide the Report type, Start date of the report, End date of the report, output method (file/email), User email address as arguments. ");
         }
 
         String report_type = args[0];
