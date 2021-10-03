@@ -5,10 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f2113e2-3042-4889-981b-84f69d5c14be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/uok/v2/sendMail/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/email/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/email/emailSender/EmailFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/email/emailSender/gmail/GmailSMTP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v2/sendMail/emailSender/EmailFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v2/sendMail/emailSender/EmailFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v2/sendMail/emailSender/gmail/GmailSMTP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v2/sendMail/emailSender/gmail/GmailSMTP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v2/ReadDataFromDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/ReportSendingApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/database/ConnectionDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/email/SentEmail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/input/CommandLineInputs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/input/CommandLineInputs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/input/InavalidInputException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/input/Inputs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/input/Inputs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/operations/ExcelfileReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/operations/InvalidReportSenderAppOperationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/operations/InvalidReportSenderAppOperationException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/operations/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/operations/Operation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/operations/OperationFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/operations/OperationFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/operations/StringJoiner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/repository/DataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/repository/DataRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/repository/DataRepositoryException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/repository/DataRepositoryException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/repository/SqlDataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/repository/SqlDataRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +59,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Log-Analyser-master/Log-Analyser-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/uok/v3/email" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\IT\java\projects\project002\e-commerce_system\src\main\java\com\uok\v3\email" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">

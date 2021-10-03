@@ -1,5 +1,7 @@
-package readData.operations;
+package com.uok.v3.operations;
+
+import java.sql.SQLException;
 
 public interface Operation {
-    String execute(Double[] numbers) throws  InvalidReportSenderAppOperationException;
+        StringBuilder getSalesInformation() throws InvalidReportSenderAppOperationException, SQLException;
 }

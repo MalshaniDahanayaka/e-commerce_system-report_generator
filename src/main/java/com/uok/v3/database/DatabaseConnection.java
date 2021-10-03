@@ -1,11 +1,12 @@
-package readData.database;
+package com.uok.v3.database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class ConnectionDatabase{
-    public Connection getConnection(){
+public class DatabaseConnection {
+
+    public static Connection getDatabaseConnection(){
 
         try {
 
@@ -13,8 +14,9 @@ public class ConnectionDatabase{
             String username="root";
             String password="";
 
+            Connection connection;
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection connection = (Connection) DriverManager.getConnection(url,username,password);
+            connection = DriverManager.getConnection(url,username,password);
             return connection;
 
         } catch (SQLException | ClassNotFoundException e) {

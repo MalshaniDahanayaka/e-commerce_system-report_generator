@@ -1,7 +1,7 @@
-package readData.input;
+package com.uok.v3.input;
 
    public interface Inputs {
-        String getOperator() throws InavalidInputException;
+        String[] getArguments() throws InvalidInputException;
     }
 
 
