@@ -1,6 +1,8 @@
 package com.uok.v3.repository;
 
-import com.uok.v3.database.DatabaseConnection;
+
+import com.uok.v3.database.ConnectionDatabase;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -11,23 +13,25 @@ public class SqlDataRepository implements DataRepository{
         String filetype ;
         String startDate;
         String endDate;
-        ResultSet resultSet;
         public SqlDataRepository(String filetype,String startDate,String endDate){
             this.filetype = filetype;
+
             this.startDate = startDate;
+
             this.endDate = endDate;
+
+
+
         }
 
+        public ResultSet GetSqlDataForReport() throws  SQLException {
 
-        public ResultSet GetSqlDataForReport() throws  SQLException{
-
-            DatabaseConnection objDBConnection = new DatabaseConnection();
-            Connection connection = objDBConnection.getDatabaseConnection();
-
-            String query = new StringBuilder().append("select * from ").append(filetype).append(" where date between '").append(startDate).append("' and '").append(endDate).append('\'').toString();
-            PreparedStatement preparedStatement = connection.prepareStatement(query);
-            resultSet = preparedStatement.executeQuery();
-            return resultSet;
+            ConnectionDatabase objDBConnection = new  ConnectionDatabase();
+            Connection connection = objDBConnection.getConnection();
+            String query = "select * from " + filetype;
+            PreparedStatement ps = connection.prepareStatement(query);
+            ResultSet rs = ps.executeQuery();
+            return rs;
 
 
         }

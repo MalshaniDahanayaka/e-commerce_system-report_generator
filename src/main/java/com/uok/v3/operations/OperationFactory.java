@@ -1,10 +1,9 @@
 package com.uok.v3.operations;
 
-import com.uok.v3.email.emailSender.gmail.GmailSMTP;
-import com.uok.v3.fileOperations.ExcelFileWrite;
+
+import com.uok.v3.email.SentEmail;
 import com.uok.v3.repository.SqlDataRepository;
 
-import javax.mail.MessagingException;
 import java.io.FileNotFoundException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -21,8 +20,7 @@ public class OperationFactory{
 
     }
 
-    public void getInstance() throws SQLException, FileNotFoundException, MessagingException {
-
+    public void getInstance() throws SQLException , FileNotFoundException {
 
 
 
@@ -31,34 +29,26 @@ public class OperationFactory{
 
 
 
-
-
-
         } if (arguments[0].equals("user_signup")) {
 
 
 
-            inFormationsString = new UserInformation(SqlResultReport).getUserInformation();
-
+            inFormationsString = new StringJoiner().getUserInformationArray(SqlResultReport);
 
 
         }if(arguments[0].equals("monthly_sales")){
 
 
-            inFormationsString = new SalesInformation(SqlResultReport).getSalesInformation();
+            inFormationsString = new StringJoiner().getSalesInformationArray(SqlResultReport);
 
         }if(arguments[3].equals("email") || arguments[3].equals("file")){
 
-            new ExcelFileWrite(inFormationsString,arguments[0]).printToExcel();
+            new ExcelfileReader(inFormationsString).printToExcel();
 
 
-        }if(arguments[3].equals("email") && (arguments[4].equals("skasunmk98@gmail.com") || arguments[4].equals("mekaladahanayaka80@gmail.com"))){
-            String filename = arguments[0];
-            String filePath = "D:\\csv\\"+filename+"Report.csv";
-
-            GmailSMTP gmailSMTP = new GmailSMTP();
-            gmailSMTP.sendEmail(arguments[4],filePath);
-
+        }if(arguments[4].equals("skasunmk98@gmail.com") || arguments[4].equals("mekaladahanayaka80@gmail.com")){
+            String filePath = "D:\\csv\\productReport.csv";
+            new SentEmail().sendMail(arguments[4],filePath);
         }
 
 
