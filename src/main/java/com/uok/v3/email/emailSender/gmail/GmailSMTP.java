@@ -10,10 +10,11 @@ import javax.mail.internet.MimeMultipart;
 import java.io.IOException;
 import java.util.Properties;
 
-public class GmailSMTP {
-    public void sendEmail(String Email, String filePath){
+public class GmailSMTP implements GmailSMTPInterface{
+    public String sendEmail(String Email, String filePath){
+
         final String username = "thusharadasun204@gmail.com";
-        final String password = "";
+        final String password = "q9P$`f^t-.R;5p];";
         String fromEmail = username;
         String toEmail = Email;
 
@@ -42,7 +43,7 @@ public class GmailSMTP {
                     new InternetAddress(toEmail)
             );
             message.setSubject("E-commerce shop report");
-            message.setText("short body");
+            message.setText("Your requested report");
 
             Multipart emailContent = new MimeMultipart();
 
@@ -60,13 +61,10 @@ public class GmailSMTP {
             message.setContent(emailContent);
             Transport.send(message);
 
-            System.out.println("Sending...");
-
-
         } catch (MessagingException | IOException e) {
             e.printStackTrace();
         }
-
+        return "Sending...";
 
     }
 }

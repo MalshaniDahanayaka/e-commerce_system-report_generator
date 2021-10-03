@@ -10,9 +10,9 @@ public class DatabaseConnection {
 
         try {
 
-            String url="jdbc:mysql://localhost:3306/ecommerce_system_database";
+            String url="jdbc:mysql://localhost:3308/ecommerce_system_database";
             String username="root";
-            String password="";
+            String password="1234";
 
             Connection connection;
             Class.forName("com.mysql.cj.jdbc.Driver");

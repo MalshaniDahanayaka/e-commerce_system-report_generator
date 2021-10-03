@@ -5,26 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f2113e2-3042-4889-981b-84f69d5c14be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/email/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/email/emailSender/EmailFormatter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/email/emailSender/gmail/GmailSMTP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/email/emailSender/EmailFormatterInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/email/emailSender/gmail/GmailSMTPInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/uok/v3/email/emailSender/gmail/GmailSMTPTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/e-commerce_system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/e-commerce_system.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v2/ReadDataFromDatabase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/ReportSendingApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/database/ConnectionDatabase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/email/SentEmail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/input/CommandLineInputs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/input/CommandLineInputs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/input/InavalidInputException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/input/Inputs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/input/Inputs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/operations/ExcelfileReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/operations/InvalidReportSenderAppOperationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/operations/InvalidReportSenderAppOperationException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/operations/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/operations/Operation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/database/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/database/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/email/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/email/emailSender/EmailFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/email/emailSender/EmailFormatter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/email/emailSender/gmail/GmailSMTP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/email/emailSender/gmail/GmailSMTP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/operations/OperationFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/operations/OperationFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/operations/StringJoiner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/repository/DataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/repository/DataRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/repository/DataRepositoryException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/repository/DataRepositoryException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/repository/SqlDataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/repository/SqlDataRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/uok/v3/email/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/uok/v3/email/emailSender/gmail/GmailSMTP$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uok/v3/email/emailSender/gmail/GmailSMTP$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/uok/v3/email/emailSender/gmail/GmailSMTP.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uok/v3/email/emailSender/gmail/GmailSMTP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/readData/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/readData/ReportSendingApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/readData/database/ConnectionDatabase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/readData/email/SentEmail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/readData/input/CommandLineInputs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/readData/input/InavalidInputException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/readData/input/Inputs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/readData/operations/ExcelfileReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/readData/operations/InvalidReportSenderAppOperationException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/readData/operations/Operation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/readData/operations/OperationFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/readData/operations/StringJoiner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/readData/repository/DataRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/readData/repository/DataRepositoryException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/readData/repository/SqlDataRepository.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +43,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -59,20 +69,41 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/uok/v3/email" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="D:/edu/Edu IT/academy/SC/cou" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="H:\IT\java\projects\project002\e-commerce_system\src\main\java\com\uok\v3\email" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.uok.v3.email.emailSender.gmail" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="JUnit.GmailSMTPTest">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.uok.v2.sendMail.Main" />
       <module name="e-commerce_system" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.uok.v2.sendMail.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.uok.v3.email.Main" />
+      <module name="e-commerce_system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.uok.v3.email.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,12 +126,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="15" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.uok.v3.Main" />
+      <module name="e-commerce_system" />
+      <option name="PROGRAM_PARAMETERS" value="monthly_sales 2021-09-01 2021-09-26 email skasunmk98@gmail.com" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.uok.v3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GmailSMTPTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="e-commerce_system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.uok.v3.email.emailSender.gmail.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.uok.v3.email.emailSender.gmail" />
+      <option name="MAIN_CLASS_NAME" value="com.uok.v3.email.emailSender.gmail.GmailSMTPTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.Main (2)" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.GmailSMTPTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GmailSMTPTest" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>

@@ -1,7 +1,6 @@
 package com.uok.v3.operations;
 
-
-import com.uok.v3.email.SentEmail;
+import com.uok.v3.email.emailSender.gmail.GmailSMTP;
 import com.uok.v3.fileOperations.ExcelFileWrite;
 import com.uok.v3.repository.SqlDataRepository;
 
@@ -57,8 +56,10 @@ public class OperationFactory{
         }if(arguments[3].equals("email") && (arguments[4].equals("skasunmk98@gmail.com") || arguments[4].equals("mekaladahanayaka80@gmail.com"))){
             String filename = arguments[0];
             String filePath = "D:\\csv\\"+filename+"Report.csv";
-            SentEmail object = new SentEmail();
-            object.sendMail(arguments[4],filePath);
+
+            GmailSMTP gmailSMTP = new GmailSMTP();
+            gmailSMTP.sendEmail(arguments[4],filePath);
+
         }
 
 
