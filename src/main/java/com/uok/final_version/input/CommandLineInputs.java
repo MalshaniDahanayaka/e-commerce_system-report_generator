@@ -32,7 +32,7 @@ public class CommandLineInputs implements Inputs {
         }
 
 
-/       //start and end date validation
+       //start and end date validation
         try {
             DateValidation getValidStartDate = new DateValidation(args[1]);
             String start_date = getValidStartDate.getValidatedDate();
@@ -55,7 +55,7 @@ public class CommandLineInputs implements Inputs {
         }
 
 
-/        //Email validation function
+        //Email validation function
         try {
             EmailValidation getValidatedEmail = new EmailValidation(args[4]);
             String validatedEmail = getValidatedEmail.getValidatedEmail();
