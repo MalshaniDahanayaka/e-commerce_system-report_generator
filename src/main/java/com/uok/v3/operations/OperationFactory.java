@@ -21,7 +21,6 @@ public class OperationFactory{
 
     }
 
-
     public void getInstance() throws SQLException, FileNotFoundException, MessagingException {
 
 

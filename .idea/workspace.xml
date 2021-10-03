@@ -5,35 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f2113e2-3042-4889-981b-84f69d5c14be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/email/emailSender/EmailFormatterInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/email/emailSender/gmail/GmailSMTPInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/uok/v3/email/emailSender/gmail/GmailSMTPTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/e-commerce_system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/e-commerce_system.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/database/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/database/DatabaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/email/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/email/emailSender/EmailFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/email/emailSender/EmailFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/email/emailSender/gmail/GmailSMTP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/email/emailSender/gmail/GmailSMTP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/uok/v3/operations/OperationFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uok/v3/operations/OperationFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uok/v3/email/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uok/v3/email/emailSender/gmail/GmailSMTP$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uok/v3/email/emailSender/gmail/GmailSMTP$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/uok/v3/email/emailSender/gmail/GmailSMTP.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uok/v3/email/emailSender/gmail/GmailSMTP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/readData/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/readData/ReportSendingApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/readData/database/ConnectionDatabase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/readData/email/SentEmail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/readData/input/CommandLineInputs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/readData/input/InavalidInputException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/readData/input/Inputs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/readData/operations/ExcelfileReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/readData/operations/InvalidReportSenderAppOperationException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/readData/operations/Operation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/readData/operations/OperationFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/readData/operations/StringJoiner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/readData/repository/DataRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/readData/repository/DataRepositoryException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/readData/repository/SqlDataRepository.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
